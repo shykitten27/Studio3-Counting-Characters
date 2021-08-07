@@ -12,7 +12,7 @@ namespace Studio3_Counting_Characters
             try
             {
                 //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader("C:/Users/Donna/launchcode/csharp-practice/Chpt3/Studio3-Counting-Characters/Studio3-Counting-Characters/Studio3-Counting-Characters/trees_lyrics.txt");
+                StreamReader sr = new StreamReader("C:\\Users\\dseid\\launchcode\\csharp-practice\\Chpt3\\Studio3-Counting-Characters\\Studio3-Counting-Characters\\Studio3-Counting-Characters\\trees_lyrics.txt");
                 //Read the first line of text
                 string line = sr.ReadLine();
                 //Continue to read until you reach end of file
@@ -33,7 +33,7 @@ namespace Studio3_Counting_Characters
             {
                 Console.WriteLine("Exception: " + e.Message);
             }
-
+//put this into separate class ??
             //Console.WriteLine("Enter a sentence or phrase.");
             //string userString = Console.ReadLine();
             //string userString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -59,6 +59,7 @@ namespace Studio3_Counting_Characters
             {
                 Console.WriteLine(character.Key + ":" + character.Value);
             }
+//end of separate class ??
         }
     }
 }
